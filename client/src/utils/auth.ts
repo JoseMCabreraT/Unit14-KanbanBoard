@@ -3,10 +3,12 @@ import { JwtPayload, jwtDecode } from 'jwt-decode';
 class AuthService {
   getProfile() {
     // TODO: return the decoded token
+    return jwtDecode<JwtPayload>(this.getToken());
   }
 
   loggedIn() {
     // TODO: return a value that indicates if the user is logged in
+    return !!this.getToken();
   }
   
   isTokenExpired(token: string) {
