@@ -15,7 +15,7 @@ export const authenticateToken = (req: Request, res: Response, next: NextFunctio
     return;
   }///This if statement checks if the token is null and if it is, it sends a 401 status code.
 
-  jwt.verify(token, process.env.ACCESS_TOKEN_SECRET as string, (err, user) => {
+  jwt.verify(token, process.env.JWT_SECRET_KEY as string, (err, user) => {
     if (err) {
       res.sendStatus(403);
       return;

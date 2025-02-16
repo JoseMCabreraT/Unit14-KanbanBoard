@@ -2,6 +2,9 @@
 
 ## Description
 
+I built a Kanban board application which includes JWT authentication. The app has its login page, which is presented with form inputs for username and password.
+If the user is trying to input an invalid username or password, an error message will be displayed. When the user logs in, a JWT will be stored in the client's
+local storage. Also, if the user doesn't use the website for a certain period of time, the session will expire.
 
 
 Deployed application url: 
