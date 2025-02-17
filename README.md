@@ -17,7 +17,9 @@ Deployed application url:
 
 ## Usage
 
-![alt text]()
+![alt text](assets/images/Main-Page.png)
+
+![alt text](assets/images/Ticket-Page.png)
 
 ## Credits
 
